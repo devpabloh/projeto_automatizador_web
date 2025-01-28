@@ -28,7 +28,9 @@ botaoSubmit.click()
 # Expandir a quantidade de processos
 containerNavegacao = navegador.find_element(By.CLASS_NAME, 'pagination')
 ultimaPag = containerNavegacao.find_element(By.XPATH, "(//a)[4]")
+print(f"O 4º link é: {quarto_link.get_attribute('href')}")
 ultimaPag.click()
+time.sleep(10)
 
 # Processar a tabela
 try:
